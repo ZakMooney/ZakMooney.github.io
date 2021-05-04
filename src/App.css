@@ -1,21 +1,8 @@
 .App {
+  height: 100vh;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+  font-family: Montserrat;
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,15 +11,69 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-size: calc(50px + 2vmin);
+  margin: 10px 0px;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.moon-con {
+  height: 40vmin;
+  width: 40vmin;
+  position: relative;
+}
+.moon {
+  height: 40vmin;
+  width: 40vmin;
+  pointer-events: none;
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.moonpulse {
+  width: 40vmin;
+  height: 40vmin;
+  background-color: #ffffff;
+  border-radius: 40vmin;
+  position: absolute;
+  z-index: 1;
+  box-shadow:
+  0 0 20px 10px rgba(255, 255, 255, 0.3);
+}
+.moonpulse:before,
+.moonpulse:after {
+  content: "";
+  width: 40vmin;
+  height: 40vmin;
+  border-radius: 40vmin;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  transform: scale(0.5);
+  transform-origin: center center;
+  animation: pulse-me 4s linear infinite;
+}
+.moonpulse:after {
+  animation-delay: 2s;
+}
+
+@keyframes pulse-me {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.3;
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
   }
 }
