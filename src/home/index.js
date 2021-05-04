@@ -9,6 +9,7 @@ function Home() {
             <div className="moonpulse"></div>
         </div>
         <h1>MOONZ</h1>
+        <h3>SOON&trade;</h3>
     </div>
   );
 }

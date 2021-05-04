@@ -37,9 +37,16 @@
 
 h1 {
   font-size: calc(60px + 2vmin);
-  margin: 10px 0px;
+  margin: 10px 0px 0px 0px;
   text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5),
   0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+
+h3 {
+  font-size: calc(10px + 2vmin);
+  margin: 0px 0px 0px 0px;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3),
+  0px 0px 10px rgba(255, 255, 255, 0.3);
 }
 
 .moon-con {
