@@ -9,12 +9,37 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+
+  background-image: radial-gradient(
+    circle,
+    hsla(220, 13%, 24%, 1) 0%, 
+    hsla(220, 13%, 24%, 1) 10%, 
+    hsla(220, 13%, 24%, 1) 10%, 
+    hsla(220, 13%, 24%, 1) 20%, 
+    hsla(220, 13%, 22%, 1) 20%, 
+    hsla(220, 13%, 22%, 1) 30%, 
+    hsla(220, 13%, 22%, 1) 30%, 
+    hsla(220, 13%, 22%, 1) 40%, 
+    hsla(220, 13%, 20%, 1) 40%,
+    hsla(220, 13%, 20%, 1) 50%,
+    hsla(220, 13%, 20%, 1) 50%,
+    hsla(220, 13%, 20%, 1) 60%,
+    hsla(220, 13%, 18%, 1) 60%,
+    hsla(220, 13%, 18%, 1) 70%,
+    hsla(220, 13%, 18%, 1) 70%,
+    hsla(220, 13%, 18%, 1) 80%,
+    hsla(220, 13%, 16%, 1) 80%,
+    hsla(220, 13%, 16%, 1) 90%,
+    hsla(220, 13%, 16%, 1) 90%,
+    hsla(220, 13%, 16%, 1) 100%
+  );
 }
 
 h1 {
-  font-size: calc(50px + 2vmin);
+  font-size: calc(60px + 2vmin);
   margin: 10px 0px;
-  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5),
+  0px 0px 10px rgba(255, 255, 255, 0.5);
 }
 
 .moon-con {
